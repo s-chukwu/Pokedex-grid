@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Grid</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Pokédex</h1>
+    <input type="search" id="search" placeholder="Search Pokémon by name...">
+  </header>
+
+  <main>
+    <p id="loading" hidden>Loading Pokémon...</p>
+    <p id="empty" hidden>No Pokémon found.</p>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <div class="pagination">
+    <button id="prev" type="button">&larr; Previous</button>
+    <span id="page-info">Page 1</span>
+    <button id="next" type="button">Next &rarr;</button>
+  </div>
+
+  <p id="message"></p>
+
+  <footer>
+    <p>Data from <a href="https://pokeapi.co" target="_blank">PokéAPI</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
